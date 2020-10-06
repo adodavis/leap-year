@@ -1,18 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool isLeapYear(int year)
-{
-  if (year % 4 != 0)
-      return false;
-  else
-  {
-      if ((year % 100 == 0 && year % 400 == 0) || year % 100 != 0)
-          return true;
-      else
-          return false;
-  }
-}
+bool isLeapYear(int);
 
 int main()
 {
@@ -36,4 +25,17 @@ int main()
   
   system("pause");
   return 0;
+}
+
+bool isLeapYear(int year)
+{
+  if (year % 4 != 0)
+      return false;
+  else
+  {
+      if ((year % 100 == 0 && year % 400 == 0) || year % 100 != 0)
+          return true;
+      else
+          return false;
+  }
 }
